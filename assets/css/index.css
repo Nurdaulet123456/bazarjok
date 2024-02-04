@@ -141,6 +141,22 @@ hr {
     justify-content: center;
 }
 
+.main_inner {
+    position: relative;
+}
+
+.main_img {
+    position: absolute;
+    top: -50%;  
+    right: -2%;
+}
+
+.main_img-car {
+    position: absolute;
+    right: 3%;
+    top: -20%;
+}
+
 .main_title {
     font-size: 48px;
     font-family: 'Montserrat', sans-serif;
