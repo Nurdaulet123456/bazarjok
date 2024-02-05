@@ -90,6 +90,7 @@ hr {
 
 .header {
   width: 100%;
+  overflow: hidden;
 }
 
 .header_inner {
@@ -139,6 +140,8 @@ hr {
   display: flex;
   flex-direction: column;
   justify-content: center;
+
+  overflow: hidden;
 }
 
 .main_inner {
@@ -164,6 +167,9 @@ hr {
   font-weight: 700;
 
   margin-bottom: 50px;
+
+  width: 100%;
+  max-width: 568px;
 }
 
 .main_title span {
@@ -182,6 +188,8 @@ hr {
 .section {
   width: 100%;
   padding-block: 140px;
+
+  overflow: hidden;
 }
 
 .section--pink {
@@ -322,7 +330,7 @@ hr {
 }
 
 .card-3_img {
-  width: 100px;
+  min-width: 100px;
   height: 100px;
   border-radius: 20px;
   background-color: var(--color-pink-400);
@@ -494,7 +502,7 @@ hr {
 
 .catalog_small-1--block--2 {
   color: white;
-  background-color: #6E2DC3;
+  background-color: #6e2dc3;
 }
 
 .catalog_small-2--block,
@@ -570,22 +578,22 @@ hr {
 /* Register */
 
 .register {
-    align-items: center;
+  align-items: center;
 }
 
 .register_content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
-    gap: 60px;
+  gap: 60px;
 }
 
 .register_arrow {
-    position: absolute;
-    left: 50%;
-    top: 60%;
-    transform: translateY(-60%);
+  position: absolute;
+  left: 50%;
+  top: 60%;
+  transform: translateY(-60%);
 }
 
 /* Footer */
@@ -597,6 +605,8 @@ hr {
   width: 100%;
 
   background-color: var(--color-gray-100);
+
+  overflow: hidden;
 }
 
 .footer_inner {
@@ -646,4 +656,184 @@ hr {
 .footer_pol {
   color: var(--color-gray-300);
   font-size: 14px;
+}
+
+/* Media Query */
+
+@media (max-width: 1024px) {
+  .main_img {
+    display: none;
+  }
+
+  .main_inner {
+    display: flex;
+    align-items: center;
+  }
+
+  .main_img-car {
+    position: static;
+  }
+
+  /* Section */
+
+  .section_title {
+    font-size: 26px;
+  }
+
+  /* Cards */
+
+  .section_inner--cards {
+    display: block;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 100%;
+
+    display: flex;
+    flex-direction: row;
+
+    margin-bottom: 16px;
+  }
+
+  .card_img {
+    width: 103px;
+    height: 76px;
+  }
+
+  .card_img > img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  .card:nth-child(5) > .card_img {
+    margin-top: 0;
+  }
+
+  .card_content {
+    border-bottom-left-radius: 0;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+  }
+
+  /* Register */
+
+  .register_arrow {
+    top: 25%;
+    left: 35%;
+
+    z-index: -1;
+  }
+
+  /* Card - 2 */
+
+  .card-2 {
+    max-width: 238px;
+  }
+
+  /* Catalog */
+
+  .catalog {
+    font-size: 14px;
+  }
+
+  .catalog, .catalog_small-1, .catalog_small-1 {
+    gap: 13px;
+  }
+
+  .catalog_small-1--block,
+  .catalog_big,
+  .catalog_small-1--big {
+    padding: 12px;
+  }
+
+  .catalog_small-img-1 > img, .catalog_big-img-2 > img, .catalog_big-img-3 > img {
+      height: 85px;
+  }
+
+  .catalog_small-img-1--big > img {
+    width: 240px;
+  }
+
+  .catalog_big {
+    width: 140px;
+    height: 293px;
+  }
+
+  .catalog_big-img::before {
+    bottom: -100%;
+    right: -190%;
+  }
+
+  .catalog_small-1--block {
+    width: 140px;
+    height: 135px;
+  }
+
+  .catalog_small-1--big {
+    width: 343px;
+    height: 135px;
+  }
+
+  .catalog_small-img-1::before {
+    width: 135px;
+    height: 135px;
+
+    bottom: -80%;
+    left: -50%;
+  }
+
+  .catalog_big-img-2::before {
+    bottom: -220%;
+    right: -150%;
+  }
+
+  /* Card-3 */
+
+  .card-3 {
+    width: 100%;
+    max-width: calc(100% - 51%);
+
+    padding: 12px;
+
+    font-size: 16px;
+    font-weight: 500;
+
+    border-radius: 16px;
+  }
+
+  .card-3_img {
+    min-width: 68px;
+    height: 68px;
+
+    border-radius: 8px;
+  }
+
+  .card-3_img > img {
+    width: 68px;
+    height: 68px;
+  }
+
+  .block {
+    right: 2%;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .block > img {
+    width: 355px;
+  }
+
+  /* Footer  */
+
+  .footer_inner {
+    align-items: center;
+  }
+
+  .footer_inner-block--info, .footer_inner-block--contact {
+    display: none;
+  }
 }
