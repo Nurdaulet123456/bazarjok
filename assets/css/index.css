@@ -214,6 +214,15 @@ hr {
   border-radius: 16px;
 
   background-color: var(--color-pink-100);
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card:nth-child(5) > .card_img {
+  margin-top: -10px;
 }
 
 .card_img {
@@ -431,7 +440,7 @@ hr {
 }
 
 .catalog_small-1--big {
-  width: 445px;
+  width: 500px;
   height: 212px;
   background-color: var(--color-pink);
 }
@@ -476,7 +485,16 @@ hr {
   position: absolute;
 
   bottom: 0;
-  left: 6%;
+  left: 10%;
+}
+
+.catalog_big-img--2::before {
+  display: none;
+}
+
+.catalog_small-1--block--2 {
+  color: white;
+  background-color: #6E2DC3;
 }
 
 .catalog_small-2--block,
