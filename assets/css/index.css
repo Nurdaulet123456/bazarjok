@@ -277,10 +277,14 @@ hr {
   font-weight: 600;
   font-size: 18px;
 
+  text-align: center;
+
   height: 96px;
   display: flex;
   align-items: center;
   justify-content: center;
+
+  line-height: 24px;
 }
 
 /* Why Choose */
@@ -365,6 +369,12 @@ hr {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.card-3_img > img {
+  width: 90px;
+  height: 90px;
+  object-fit: contain;
 }
 
 /* Work */
@@ -634,7 +644,6 @@ hr {
 /* Footer */
 
 .footer {
-  padding-inline: 28px;
   padding-block: 36px;
 
   width: 100%;
