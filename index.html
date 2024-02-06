@@ -21,6 +21,10 @@
                     <img class="img" src="assets/img/icons/logo.svg" alt="">
                 </div>
 
+                <div class="header_logo-white">
+                    <img class="img" src="assets/img/icons/logo-white.svg" alt="">
+                </div>
+
                 <div class="header_content">
                     <div class="header_contact">
                         <img src="assets/img/icons/phone.svg" alt="">
@@ -34,7 +38,13 @@
                     </div>
                     <div class="header_lang">
                         <div>RU</div>
-                        <img src="assets/img/icons/drop.svg" alt="">
+                        <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M1 1.5L5.29289 5.79289C5.62623 6.12623 5.79289 6.29289 6 6.29289C6.20711 6.29289 6.37377 6.12623 6.70711 5.79289L11 1.5"
+                                stroke="#626C7A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                                id="icons" />
+                        </svg>
+
                     </div>
                 </div>
             </div>
@@ -127,7 +137,7 @@
 
     <!-- Register -->
 
-    <section class="section" style="padding-top: 0;">
+    <section class="section section--register" style="padding-top: 0;">
         <div class="container">
             <div class="section_inner register">
                 <div class="register_img">
@@ -153,7 +163,7 @@
 
     <!-- Why Choose -->
 
-    <section class="section" style="padding-top: 0;">
+    <section class="section section--card-2" style="padding-top: 0;">
         <div class="container">
             <div class="section_title" style="margin-bottom: 156px;">Почему нужно выбрать Bazarjoq?</div>
             <div class="section_inner">
@@ -186,9 +196,9 @@
     <!-- Catalog -->
     <section class="section" style="padding-top: 0;">
         <div class="container">
-            <div class="section_title">У нас можно заказать всё, <br /> что нужно для предприятий общественного питания
+            <div class="section_title">У нас можно заказать всё,  что нужно для предприятий общественного питания
             </div>
-            <div class="catalog">
+            <div class="catalog catalog--web">
                 <div class="catalog_big">
                     <div>Напитки</div>
 
@@ -250,6 +260,72 @@
                 </div>
             </div>
 
+            <div class="catalog catalog--mob">
+                <div class="catalog-1">
+                    <div class="catalog_big catalog_small-1">
+                        <div class="line-height">Напитки</div>
+
+                        <div class="catalog_big-img">
+                            <img class="img" src="assets/img/images/catalog/catalog-1.svg" alt="">
+                        </div>
+                    </div>
+
+                    <div class="catalog_small-1--big">
+                        <div class="line-height">Замороженная продукция</div>
+
+                        <div class="catalog_small-img-1--big catalog_small-img-3--big">
+                            <img class="img" src="assets/img/images/catalog/catalog-3.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="catalog-2">
+                    <div class="catalog_small-1--block catalog_small-3--block">
+                        <div class="line-height">Маргарины, <br /> кулинарные <br /> жиры</div>
+
+                        <div class="catalog_big-img-3">
+                            <img class="img img3" src="assets/img/images/catalog/catalog-7.svg" alt="">
+                            <img class="img img2" src="assets/img/images/catalog/catalog-8.svg" alt="">
+                        </div>
+                    </div>
+
+                    <div class="catalog_small-1--block catalog_small-1--block--2">
+                        <div class="line-height">Молочная <br /> продукция</div>
+
+                        <div class="catalog_small-img-1 catalog_big-img catalog_big-img--2">
+                            <img class="img" src="assets/img/images/catalog/catalog-2.png" alt="">
+                        </div>
+                    </div>
+
+                    <div class="catalog_small-1--block catalog_small-2--block">
+                        <div class="line-height">Бакалея</div>
+
+                        <div class="catalog_big-img-2">
+                            <img class="img" src="assets/img/images/catalog/catalog-6.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="catalog-3">
+                    <div class="catalog_small-1--big catalog_small-2--big">
+                        <div class="line-height">Хозяйственные товары</div>
+
+                        <div class="catalog_small-img-1--big catalog_small-img-2--big">
+                            <img class="img" src="assets/img/images/catalog/catalog-5.svg" alt="">
+                        </div>
+                    </div>
+
+                    <div class="catalog_small-1" style="margin-bottom: 20px;">
+                        <div class="catalog_small-1--block">
+                            <div class="line-height">Бытовая <br /> химия</div>
+
+                            <div class="catalog_small-img-1 catalog_small-img-5 catalog_big-img">
+                                <img class="img" src="assets/img/images/catalog/catalog-4.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
             <div class="text-center" style="margin-top: 45px;">
                 <button class="btn">Перейти в каталог</button>
             </div>
@@ -262,20 +338,20 @@
         <div class="container">
             <div class="section_title">Чем мы лучше ваших поставщиков?</div>
 
-            <div class="section_inner" style="flex-wrap: wrap;">
+            <div class="section_inner section_inner--card3" style="flex-wrap: wrap;">
                 <div class="card-3" style="margin-bottom: 20px;">
                     <div class="card-3_img">
                         <img class="img" src="assets/img/images/card-3-1.svg" alt="">
                     </div>
 
-                    <div>Электронный документооборот </div>
+                    <div class="card-3_content">Электронный документооборот </div>
                 </div>
                 <div class="card-3" style="margin-bottom: 20px;">
                     <div class="card-3_img">
                         <img class="img" src="assets/img/images/card-3-2.svg" alt="">
                     </div>
 
-                    <div>Экономия расходов</div>
+                    <div class="card-3_content">Экономия расходов</div>
                 </div>
                 <div class="card-3">
                     <div class="card-3_img" style="flex-direction: column; padding-inline: 8px;">
@@ -283,14 +359,14 @@
                         <img class="img" src="assets/img/images/card-3-4.svg" alt="">
                     </div>
 
-                    <div>Обмен информацией с IIKO и R-Keeper для автоматизации складского учета</div>
+                    <div class="card-3_content">Обмен информацией с IIKO и R-Keeper для автоматизации складского учета</div>
                 </div>
                 <div class="card-3">
                     <div class="card-3_img">
                         <img class="img" src="assets/img/images/card-3-5.svg" alt="">
                     </div>
 
-                    <div>Возможность закупать товары в рассрочку</div>
+                    <div class="card-3_content">Возможность закупать товары в рассрочку</div>
                 </div>
             </div>
         </div>
@@ -305,7 +381,7 @@
                 <div class="section_block">
                     <div class="section_block-number">1.</div>
 
-                    <div>Сайт <a href="#" style="color: #FFE102;">bazarjoq.kz</a> и мобильная версия</div>
+                    <div>Сайт <a href="#" class="section_block-link">bazarjoq.kz</a> и мобильная версия</div>
                 </div>
                 <div class="section_block">
                     <div class="section_block-number">2.</div>
