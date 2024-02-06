@@ -700,6 +700,10 @@ hr {
 /* Media Query */
 
 @media (max-width: 1024px) {
+  .container {
+    padding: 0 30px;
+  }
+
   .main_img {
     display: none;
   }
@@ -763,10 +767,12 @@ hr {
   /* Register */
 
   .register_arrow {
-    top: 25%;
-    left: 35%;
+    top: 20%;
+    left: 42%;
 
     z-index: -1;
+
+    width: 140px;
   }
 
   /* Card - 2 */
@@ -786,7 +792,7 @@ hr {
   }
 
   .catalog--web {
-    display: block;
+    display: flex;
   }
 
   .catalog,
@@ -799,6 +805,8 @@ hr {
   .catalog_big,
   .catalog_small-1--big {
     padding: 12px;
+
+    border-radius: 16px;
   }
 
   .catalog_small-img-1 > img,
@@ -817,7 +825,7 @@ hr {
   }
 
   .catalog_big-img::before {
-    bottom: -100%;
+    bottom: -140%;
     right: -190%;
   }
 
@@ -827,7 +835,7 @@ hr {
   }
 
   .catalog_small-1--big {
-    width: 343px;
+    width: 300px;
     height: 135px;
   }
 
@@ -893,6 +901,10 @@ hr {
 }
 
 @media (max-width: 500px) {
+  .container {
+    padding: 0 15px;
+  }
+
   .header {
     background-color: var(--color-pink-500);
   }
