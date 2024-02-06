@@ -86,6 +86,20 @@ hr {
   --color-blue-400: #3f5ccc;
 }
 
+.color-pink {
+  color: var(--color-pink-400);
+}
+
+/* FlexBox */
+
+.flex {
+  display: flex;
+}
+
+.align-center {
+  align-items: center;
+}
+
 /* Header */
 
 .header {
@@ -112,6 +126,10 @@ hr {
 .header_lang {
   display: flex;
   align-items: center;
+}
+
+.header_contact.header_contact--mob {
+  display: none;
 }
 
 .header_contact,
@@ -256,9 +274,13 @@ hr {
 
   padding: 12px;
 
-  text-align: center;
   font-weight: 600;
   font-size: 18px;
+
+  height: 96px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* Why Choose */
@@ -404,6 +426,14 @@ hr {
   font-size: 18px;
   font-weight: 700;
   text-transform: uppercase;
+}
+
+.catalog--mob {
+  display: none;
+}
+
+.catalog--web {
+  display: flex;
 }
 
 .catalog_big {
@@ -618,7 +648,7 @@ hr {
   color: var(--color-block-700);
 
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: space-between;
 }
 
@@ -726,6 +756,8 @@ hr {
     display: flex;
     align-items: center;
     padding-left: 20px;
+
+    height: auto;
   }
 
   /* Register */
@@ -860,7 +892,7 @@ hr {
   }
 }
 
-@media (max-width: 429px) {
+@media (max-width: 500px) {
   .header {
     background-color: var(--color-pink-500);
   }
@@ -880,6 +912,10 @@ hr {
   .header_contact,
   .header_web {
     display: none;
+  }
+
+  .header_contact.header_contact--mob {
+    display: block;
   }
 
   /* Icons */
@@ -925,6 +961,12 @@ hr {
   .card_content {
     font-size: 14px;
     font-weight: 500;
+
+    justify-content: flex-start;
+  }
+
+  .card_img.card_img--2 {
+    margin-top: 4px;
   }
 
   /* Register */
@@ -1007,6 +1049,19 @@ hr {
     display: block;
   }
 
+  .catalog_small-1, .catalog_small-1--block {
+    width: 127px!important;
+    height: 127px!important;
+  }
+
+  .catalog_small-1--big {
+    height: 127px!important;
+  }
+
+  .btn--mob {
+    margin-top: 20px!important;
+  }
+
   .catalog--web {
     display: none;
   }
@@ -1086,7 +1141,8 @@ hr {
 
     border-radius: 16px;
 
-    margin-bottom: 12px;
+    margin-bottom: 0!important;
+    margin-bottom: 12px!important;
   }
 
   .card-3_content {
@@ -1115,6 +1171,10 @@ hr {
   .card-3_img > img {
     width: 58px;
     height: 72px;
+  }
+
+  .img.card-3_img--1 {
+    margin-bottom: -12px!important;
   }
 
   /* Work */
