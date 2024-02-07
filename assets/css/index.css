@@ -1237,6 +1237,9 @@ hr {
 
     font-size: 13px;
     line-height: 18px;
+
+    width: 100%;
+    max-width: 220px;
   }
 
   .card-3:nth-child(3) {
