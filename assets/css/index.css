@@ -1052,7 +1052,7 @@ hr {
   }
 
   .card_content {
-    font-size: 13px;
+    font-size: 12px;
     font-weight: 500;
 
     justify-content: flex-start;
@@ -1070,9 +1070,8 @@ hr {
   }
   
   .card_content.card_content--1 > div {
-    max-width: 130px;
+    max-width: 120px;
   }
-
   
   .card_img.card_img--2 {
     margin-top: 4px;

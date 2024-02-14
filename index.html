@@ -109,8 +109,8 @@
                         <img class="img" src="assets/img/images/card3.svg" alt="">
                     </div>
 
-                    <div class="card_content card_content--2">
-                        <div>Заказывайте товары <br /> в любое удобное время</div>
+                    <div class="card_content card_content--2" id="card_content--2">
+                        <div>Заказывайте товары в любое удобное время</div>
                     </div>
                 </div>
 
@@ -363,7 +363,8 @@
                         <!-- <img class="img" src="assets/img/images/card-3-4.svg" alt=""> -->
                     </div>
 
-                    <div class="card-3_content">Обмен информацией с IIKO и R-Keeper для автоматизации складского учета</div>
+                    <div class="card-3_content">Обмен информацией с IIKO и R-Keeper для автоматизации складского учета
+                    </div>
                     <div class="card-3_content card-3_content--2">Обмен информацией с IIKO и R-Keeper </div>
                 </div>
                 <div class="card-3">
@@ -430,6 +431,21 @@
             <div class="footer_pol">©2023. Все права защищены</div>
         </div>
     </footer>
+
+
+    <script>
+        function addLineBreak() {
+            var dynamicText = document.getElementById('card_content--2');
+            var viewportWidth = window.innerWidth || document.documentElement.clientWidth;
+
+            if (viewportWidth <= 600) {
+                dynamicText.innerHTML = dynamicText.innerHTML.replace('Заказывайте товары', 'Заказывайте товары<br>');
+            }
+        }
+
+        window.onload = addLineBreak;
+        window.onresize = addLineBreak;
+    </script>
 
 </body>
 
